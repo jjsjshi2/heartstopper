@@ -4,7 +4,7 @@ import appConfig from "../config/appConfig";
 const config = appConfig;
 
 const StartGame = (parent) => {
-  return new PIXI.Application({ ...config, parent: parent });
+  return new PIXI.Application({ ...config, parent: parent, forceCanvas = true });
 };
 
 export default StartGame;
