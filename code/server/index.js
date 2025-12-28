@@ -6,14 +6,12 @@ const app = express();
 const server = http.createServer(app);
 const cors = require("cors");
 const port = process.env.PORT || SERVER_PORT;
-/*
 const socketIo = require("socket.io");
 const socketServer = socketIo(server, {
   cors: {
     origin: "*",
   },
 });
-*/
 
 app.use(
   cors({
